@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'Vokiar';
+    src: url(https://myfonts.ru/myfonts?fonts=vokiar);
+}
+
+@font-face{
+    font-family: 'OpenSans';
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:wght@500&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Victor+Mono:wght@200&display=swap');
+}
+@fontLogo:'Vokiar';
+@fontRegular:'OpenSans';
+@blockDisplay:block;
+.standartText{
+    font-family: @fontRegular;
+    font-size: 25px;
+    line-height: normal;
+    font-style: normal;
+}
+@brownColor:#4D4D4D;
+@grayColor:#BFCCB8;
+@buttonHeight:70px;
+@buttonRadius:15px;
+
+.buttonShapes{
+    height: 70px;
+    border-radius: 15px;
+}
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.paddingElements{
+    padding: 0 5px;
+}
+*{
+    text-decoration: none;
+}
+*:hover{
+    text-decoration: none;
+}
+.body{
+    max-width: 1900px;
+    height: 100vh;
+}
+.header{
+    display: block;
+   
+}
+.wrapper {
+    width: 95%;
+    margin: auto;
+    border-bottom: 1px solid #00000033;
+    background: #f0e8e8;
+}
+.headerAlignRow_Block {
+    .flexRow;
+}
+.menuButton {
+    .flexRow;
+    justify-content: center;
+    width: 10%;
+    background: @brownColor;
+    .buttonShapes;
+}
+.menuButton_IMG {
+    display: inline-block;
+    vertical-align: middle;
+    .paddingElements
+}
+.menuButton_Text {
+    display: inline-block;
+    vertical-align: middle;
+    .standartText;
+    .paddingElements;
+}
+.ChoiceCityButton_Block {
+    .flexRow;
+    justify-content: center;
+    width: 20%;
+    background: @grayColor;
+    .buttonShapes;
+    min-width: 260px;
+}
+.ChoiceCityButton_ICO {
+    display:inline;
+    width: 25px;
+    height: 30px;
+    flex-shrink: 0;
+    
+    .paddingElements;
+}
+.ChoiceCityButton_Select {
+    display:inline;
+    border: none;
+    background-color: @grayColor;
+    .standartText;
+    .paddingElements;
+}
+.ChoiceCityButton_Select:first-child{
+    padding-top: 10px;
+}
+.ChoiceCityButton_Option {
+    .standartText;
+}
+.logoBlock {
+    .flexRow;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 0px;
+}
+.logotip_link {
+   display: flex;
+   align-items: center;
+   
+   margin: 0px;
+   padding: 0px;
+}
+.logotip {
+   margin: 0px;
+    font-family: @fontLogo;
+    color: #BFCCB8;
+    font-size: 70px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.slogan {
+    display: @blockDisplay;
+    .standartText;
+    font-weight: 300;
+}
+.search_button {
+    display: @blockDisplay;
+    width:5%;
+}
+.search_ICO {
+
+}
+.account_button {
+    display: @blockDisplay;
+    width:5%;
+}
+.account_ICO {
+}
+.basket_block {
+    .flexRow;
+    justify-content: center;
+    width:10%;
+    background: @grayColor;
+    .buttonShapes;
+}
+.basket_button {
+    display: inline;
+    .paddingElements
+}
+.basket_ICO {
+
+}
+.BasketPrice_count {
+    display: inline;
+    .standartText;
+    .paddingElements
+}
+.basketMoneyExchange {
+    display: inline;
+    .standartText;
+    .paddingElements
+}

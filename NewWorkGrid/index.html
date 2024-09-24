@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-init{
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+            background: red;
+        }
+        .grid-init2{
+            max-width: 1000px;
+            width: 100%;
+            margin: auto;
+            background: green;
+        }
+        p{font-size: 3em; padding: 20px; background: #fff;text-align: center;}
+
+        .grid{
+            display: grid;
+            gap:20px 30px;
+           /* grid-template-columns: 150px 20vw auto 1fr;*/
+           /*grid-template-columns: repeat(4, 1fr);*/
+           grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-rows: auto auto;
+        }
+        .grid2{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template: 
+            "a1 a6"
+            "a4 a2"
+            "a3 a5";
+        }
+
+        .box1{grid-area: a1;}
+        .box2{grid-area: a2;}
+        .box3{grid-area: a3;}
+        .box4{grid-area: a4;}
+        .box5{grid-area: a5;}
+        .box6{grid-area: a6;}
+
+        /*Сетка карточки товаров*/
+        .GoodsCard{
+
+        }
+        .GoodsCard_GoodsImage{
+
+        }
+        .GoodsCard_GoodsInformBlock{
+
+        }
+        .GoodsCard_GoodsPrice{
+
+        }
+        .GoodsCard_GoodsTitle{
+
+        }
+        .GoodsCard_RatingStarIco{
+
+        }
+        .GoodsCard_RatingPointIco{
+
+        }
+        .GoodsCard_InformText{
+
+        }
+        .LightText{
+
+        }
+        .DarkText{
+
+        }
+        .GoodsCard_ButtonBuy{
+
+        }
+        .GoodsCard_ButtonBuy_Ico{
+
+        }
+        .GoodsCard_ButtonBuy_Title{
+            
+        }
+        /*Конец Сетка карточки товаров*/
+
+    </style>
+</head>
+<body>
+    <div class="grid-init grid">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+    </div> 
+    
+    <div class="grid2 grid-init2">
+        <p class="box1">1</p>
+        <p class="box2">2</p>
+        <p class="box3">3</p>
+        <p class="box4">4</p>
+        <p class="box5">5</p>
+        <p class="box6">6</p>
+    </div>  
+    <div class="GoodsCard">
+        <div class="GoodsCard_ColumAlign">
+            <img src="https://images.unsplash.com/photo-1454873019514-eae2f086587a?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="GoodsCard_GoodsImage">
+            <div class="GoodsCard_GoodsInformBlock">
+                <p class="GoodsCard_GoodsPrice">209</p>
+                <p class="GoodsCard_GoodsTitle">Мыло жидкое древесный уголь JOY HOME, 500 мл</p>
+                <div class="GoodsCard_RatingBlock">
+                    <img src="../newProject/img/RatingStare.png" alt="" class="GoodsCard_RatingStarIco">
+                    <p class="GoodsCard_InformText DarkText"></p>
+                    <img src="../newProject/img/RatingPoint.png" alt="" class="GoodsCard_RatingPointIco">
+                    <p class="GoodsCard_InformText LightText"></p>
+                </div>
+                <a href="" class="GoodsCard_ButtonBuy">
+                    <img src="../newProject/img/BuyIco.png" alt="" class="GoodsCard_ButtonBuy_Ico">
+                    <p class="GoodsCard_ButtonBuy_Title">Купить</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

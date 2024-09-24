@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url("RESET_CSS/Reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Victor+Mono:wght@200&display=swap');
+/*Шапка*/
+header{
+    background-color: #d2a69e;
+    padding: 30px 0;
+    position: fixed;
+   z-index: 9998;
+   max-height:150px;
+}
+
+.wrapper{
+    width: 90%;
+    margin: auto;
+}
+
+.stroka{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.logo{
+        display: block;
+        width: 7%;
+        border-radius: 50%;
+        min-width: 50px;
+}
+
+.zag1{
+       display: block;
+       width: 30%;
+       font-size: 35px;
+}
+.zag3{
+    font-size: 40px;
+    color: red;
+    position: absolute;
+    top: 70px;
+    left: 15%;
+}
+.menu1{
+      display: block;
+      width: 35%;
+}
+
+.menu2{
+    display: block;
+    width: 15%;
+}
+
+
+.knopka, .knopka_ico{
+    display: inline;
+    list-style: none;
+    margin: 0 10px;
+}
+
+
+.button{
+    color: black;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+.button:hover{
+    color: rgb(252, 252, 252);
+    text-shadow: 1px 1px 2px rgb(76, 76, 78);
+}
+
+.picto{
+    width: 30px;
+}
+
+body{
+    background: url(../IMG/uzor2.jpg);
+    background-attachment: fixed;
+    margin: 0 auto;
+}
+
+.kontent1{
+    background-color: #916b6b; 
+    height: 100vh;
+    padding-top: 200px;
+
+}
+
+
+/*
+.button:active + .uslugi__zag__frame{
+    position: relative;
+    margin-top:50px;
+}*/
+/*Раздел Услуги*/
+
+.kontent2{
+   
+    /*padding-top:130px;*/
+    background-color: #bbb3b3;
+    padding-top: 200px;
+   
+}
+
+.uslugi__zag__frame{
+   background-color: #523D3D;
+   display: flex;
+   flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+} 
+
+
+.uslugi__zag{
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+    font-size: 25px;
+    color:white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+}
+
+
+.uslugi__zag::before, .uslugi__zag::after{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 60%;
+	height: 0.5px;
+	background: white;
+    opacity: 0.3;
+    border: solid #FFF;
+	border-width: 0 5px;
+    position: relative;
+}
+.uslugi__zag::before{
+    margin-left: -100%;
+    left: -25px;
+}
+.uslugi__zag::after{
+    margin-right: -100%;
+    right: -25px;
+}
+
+
+.uslugi__img{
+    display: block;
+    width: 100%;
+}
+.nazv__uslug{
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   letter-spacing: 2px;
+    font-size: 20px;
+    color: #FFF;
+    padding: 10px 5px;
+}
+
+.uslugi__kol__kart2{
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.uslugi__str__kart2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: left;
+    margin: 15px 0;
+}
+.uslugi__kart2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 20%;
+    background-color: #332B2B;
+    border-radius: 15px;
+    margin:0 5px;
+    overflow:auto;
+    min-width: 290px;
+    max-height: 400px;
+}
+.uslugi__kart2:hover{
+    opacity: 0.4;
+    cursor: pointer;
+}
+.uslugi__kart2:hover + .tekst__kart{
+    display: flex;
+}
+
+.tekst__kart{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 80%;
+    background-color: #332B2B;
+    border-radius: 15px;
+    overflow:auto;
+    padding: 0 10px;
+    margin:0 5px;
+    min-width: 470px;
+    max-height: 400px;
+    
+}
+.zag_tip_uslug{
+    display: block;
+    text-align: left;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   letter-spacing: 2px;
+    font-size: 25px;
+    color: #FFF;
+   padding: 0px 5px 0 5px;
+}
+
+.opis_uslug{
+    display: block;
+    text-align: justify;
+    text-indent: 60px;
+    font-weight: 400;
+    font-family: Victor Mono;
+   letter-spacing: 2px;
+    font-size: 20px;
+    color: #FFF;
+    padding: 0px 5px 0px 5px;
+}
+
+.uslugi__kol__kart2 .uslugi__str__kart2:nth-child(even){
+    flex-direction: row-reverse;
+}
+.uslugi__kol__kart2 .uslugi__str__kart2:nth-child(even)  .zag_tip_uslug{
+    text-align: right;
+}
+/*Конец раздела услуги*/
+/*контент 3*/
+.kontent3{
+    background-color: #3b6b4a;
+    height: 100vh;
+    position: relative;
+    padding-top: 200px;
+}
+.pic1{
+    position: absolute;
+    top:250px;
+    left:20%;
+    width: 800px;
+}
+.zag2{
+    position: absolute;
+    font-size: 40px;
+    color: red;
+    top: 400px;
+    left: 30%;
+}
+
+footer{
+    background-color: #008d2d;
+    height: 100vh;
+    position: relative;
+}
+
+.logo_footer {
+    position: absolute;
+    left: 5%;
+    top:20%;
+    display: block;
+    width: 9%;
+    border-radius: 50%;
+    min-width: 50px;
+}
+.contcats_footer {
+    position: absolute;
+    top:20%;
+    left:15%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.zag_contacts_footer {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   letter-spacing: 2px;
+    font-size: 18px;
+    color: #FFF;
+   padding: 0px 5px 0 5px;
+}
+.phone_number_footer {
+    display: block;
+    text-align: justify;
+    font-weight: 400;
+    font-family: Victor Mono;
+   letter-spacing: 2px;
+    font-size: 12px;
+    color: #FFF;
+    padding: 0px 5px 0px 5px;
+}
+.email_footer {
+    display: block;
+    text-align: justify;
+    font-weight: 400;
+    font-family: Victor Mono;
+   letter-spacing: 2px;
+    font-size: 12px;
+    color: #FFF;
+    padding: 0px 5px 0px 5px;
+}
+.copyright {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    display: block;
+    text-align: justify;
+    font-weight: 400;
+    font-family: Victor Mono;
+   letter-spacing: 2px;
+    font-size: 12px;
+    color: #FFF;
+    padding: 0px 5px 0px 5px;
+}
+.pic_footer{
+    position: absolute;
+    right: 5%;
+    top:20%;
+    display: block;
+    width: 20%;
+    border-radius: 10%;
+}
+
+.lightbox{
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+}
+
+.lightbox:target{
+    outline: none;
+    display: block;
+}
+
+.karta{
+    position: absolute;
+    bottom:5%;
+    left:15%;
+    border-radius: 20px;
+}
+
+/*media*/
+
+@media screen and (max-width:1024px) {
+    
+.knopka{
+    display: block;
+    margin: 5px 0px;
+    }
+    .zag1{
+        width: 100%;
+    }
+       
+.knopka2{
+    display: inline;
+    margin: 0 5px;
+    }
+
+    .menu2{
+        width: 20%;
+    }
+    .zag3{
+        font-size: 25px;
+        color: red;
+        position: absolute;
+        top: 120px;
+        left: 15%;
+        width: 30%;
+    }
+    .pic1{
+        width: 70%;
+    }
+    .zag2{
+        width: 40%;
+    }
+
+    .uslugi__kol__kart2{
+        width: 100%;
+    }
+    .uslugi__str__kart2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:nowrap;
+        justify-content: left;
+        margin: 15px 0;
+    }
+    .uslugi__kart2{
+         min-width: 250px;
+    }
+    .uslugi__kart2:hover{
+        opacity: 0.4;
+        cursor: pointer;
+    }
+    .uslugi__kart2:hover + .tekst__kart{
+        display: flex;
+    }
+    
+    .tekst__kart{
+        justify-content: space-evenly;
+        width: 80%;
+        min-width: 376px;
+        max-height: 1000px;
+    }
+    .zag_tip_uslug{
+        font-size: 20px;
+    }
+    
+    .opis_uslug{
+        font-size: 15px;
+    }
+    
+    .uslugi__kol__kart2 .uslugi__str__kart2:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    .uslugi__kol__kart2 .uslugi__str__kart2:nth-child(even)  .zag_tip_uslug{
+        text-align: right;
+    }
+
+    
+.logo_footer {
+    left: 5%;
+    top:10%;
+}
+.contcats_footer {
+    position: absolute;
+    top:10%;
+    left:25%; 
+}
+.zag_contacts_footer {
+    font-size: 15px;
+}
+
+.copyright {
+    position: absolute;
+    top: 22%;
+    left: 5%;
+    width: 50%;
+}
+.pic_footer{
+    position: absolute;
+    right: 5%;
+    top:10%;
+    width: 30%;
+}
+
+.karta{
+    position: absolute;
+    top:42%;
+    left:15%;
+    width: 70%;
+    height: 50%;
+}
+
+}
+
+@media screen and (max-width:768px) {
+    .stroka{
+        flex-direction: column;
+        align-items: center;
+    }
+    .zag1{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .knopka {
+    display: inline;
+    margin: 0 10px;
+    }
+    .menu1{
+        display: block;
+        width: 100%;
+  }
+    .menu2{
+    width: 100%;
+    }
+    .zag3{
+        display:none;
+    }
+
+    .menu1 ul, .menu2 ul{
+        text-align: center;
+    }
+    .menu1, .menu2{
+        margin:10px 0;
+    }
+    .button{
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .picto{
+        width: 25px;
+    }
+
+    .nazv__uslug{
+        font-size: 15px; 
+    }
+    
+   .opis_uslug{
+    font-size: 12px;
+    letter-spacing: 1px;
+   }
+    .uslugi__str__kart2{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+    }
+    .uslugi__kart2{
+        margin:5px 0px;
+        align-items: center;
+        
+    }
+    
+    .uslugi__img{
+        width: 70%;
+        
+    }
+    .tekst__kart{
+        margin-bottom:20px;
+    }
+    .zag_tip_uslug{
+        display: none;
+    }
+    
+    .uslugi__kol__kart2 .uslugi__str__kart2:nth-child(even){
+        flex-direction: column;
+    }
+    
+    .logo_footer {
+        left: 45%;
+        top:2%;
+    }
+    .contcats_footer {
+        position: absolute;
+        top:11%;
+        left:30%; 
+    }
+    .zag_contacts_footer {
+        font-size: 15px;
+    }
+    
+    .copyright {
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        width: 100%;
+    }
+    .pic_footer{
+        position: absolute;
+        left: 35%;
+        top:20%;
+        width: 30%;
+    }
+    
+    .karta{
+        position: absolute;
+        top:45%;
+        left:15%;
+        width: 70%;
+        height: 50%;
+    }
+    .pic1{
+        left: 15%;
+    }
+    .zag2{
+        top:35%;
+        left:20%;
+        width: 50%;
+        font-size: 25px;
+    }
+}

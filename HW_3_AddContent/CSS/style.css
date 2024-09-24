@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url("RESET_CSS/Reset.css");
+/*Шапка*/
+header{
+    background-color: #e66d41;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.logo{
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.knopka{
+    list-style: none;
+    display: inline;
+    margin: 0 40px;
+}
+
+.ssylka{
+font-size: 30px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: #ffffff;
+text-decoration: none;
+letter-spacing: 5px;
+padding: 10px;
+}
+.ssylka:hover{
+    background-color: #d2886c;
+    border-radius: 10px;
+    color: #c7c3c3;
+    /*border: 1px solid #e66d41;*/
+}
+.ssylka:active{
+    background-color: #cf4513;
+    border: 3px solid #c96440;
+    box-shadow: 3px 3px 5px #c96440;
+    letter-spacing: 4px;
+    color: rgb(208, 204, 204);
+}
+
+/*Основная часть сайта*/
+
+.sidebar{
+width: 25%;
+background-color: gray;
+display: block;
+}
+
+.reklama{
+    width: 100%;
+    /*margin-top: 30px;*/
+}
+.kontent{
+    width: 65%;
+background-color: rgb(90, 72, 72);
+display: block;
+padding: 0 50px;
+}
+
+main{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+.nav1{
+    padding: 30px 0;
+}
+.spisok1{
+    text-align: center;
+    padding-inline-start: 0px;
+    margin-block-start: auto;
+    margin-block-end: auto;
+    list-style-type: none;
+    width: 60%;
+    margin-left: 20%;
+}
+.knopka2{
+    
+    list-style: none;
+    margin: 10px 0 0 0;
+  
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgb(55, 57, 73);
+    border: 2px solid rgb(55, 57, 73);
+    box-shadow: 2px 2px 5px rgb(55, 57, 73);
+    padding: 10 0 10 0;
+}
+.knopka2:hover{
+    background-color: rgb(94, 99, 136);
+    
+}
+.knopka2:active{
+    background-color: rgb(14, 14, 20);
+    border: 3px solid rgb(55, 57, 73);
+    box-shadow: 3px 3px 5px rgb(55, 57, 73);
+}
+.knopka2:active .ssylka2{
+    letter-spacing: 1px;
+    color: rgb(208, 204, 204);
+}
+.ssylka2{
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.picture{
+    display: block; 
+    width: 30%;
+    border:#e66d41 2px solid;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px #e66d41; 
+}
+
+.picture:hover{
+    opacity: 30%;
+}
+
+.stroka1{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.text1{
+display: block;
+width: 48%;
+font-size: 20px;
+color: white;
+text-align: justify;
+text-indent: 50px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+letter-spacing: 0.5px;
+}
+.zagolovok{
+    font-weight: 600;
+    font-family: Playfair Display;
+    color: white;
+    letter-spacing: 3px;
+}
+.zagolovok2{text-align: center;
+    font-weight: 600;
+    font-family: Playfair Display;
+    color: white;
+    letter-spacing: 3px;
+}
+.zagolovok3{text-align: center;
+    font-weight: 350;
+    font-family: Playfair Display;
+    color: white;
+    letter-spacing: 3px;
+}
+
+/*Домашное задание №3 */
+
+.text2{
+    display: block;
+    text-align: justify;
+    width: 20%;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-indent: 50px;
+    letter-spacing: 0.5px;
+}
+.picture2{
+    display: block;
+    width: 20%;
+    border:#e66d41 2px solid;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px #e66d41; 
+    margin-bottom: 20px;
+    height: 13vw;
+}
+.picture2:hover{
+    opacity: 30%;
+}
+.rollover1{
+    width: 30%;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+    background-color:rgb(55, 57, 73); 
+    border: 2px solid rgb(55, 57, 73);
+    box-shadow: 2px 2px 5px rgb(55, 57, 73);;
+    padding: 7px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.rollover1:hover{
+    background-color: rgb(94, 99, 136);
+}
+.rollover1:active{
+    background-color: rgb(14, 14, 20);
+    border: 3px solid rgb(55, 57, 73);
+    box-shadow: 3px 3px 5px rgb(55, 57, 73);
+    letter-spacing: 1px;
+    color: rgb(208, 204, 204);
+}
+
+.rollover2{
+    width: 30%;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+    background-color:rgb(55, 57, 73); 
+    border: 2px solid rgb(55, 57, 73);
+    box-shadow: 2px 2px 5px rgb(55, 57, 73);;
+    padding: 7px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.rollover2:hover{
+    background-color: rgb(94, 99, 136);
+}
+.rollover2:active{
+    background-color: rgb(14, 14, 20);
+    border: 3px solid rgb(55, 57, 73);
+    box-shadow: 3px 3px 5px rgb(55, 57, 73);
+    letter-spacing: 1px;
+    color: rgb(208, 204, 204);
+}
+.rollover3{
+    width: 30%;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+    background-color:rgb(55, 57, 73); 
+    border: 2px solid rgb(55, 57, 73);
+    box-shadow: 2px 2px 5px rgb(55, 57, 73);;
+    padding: 7px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.rollover3:hover{
+    background-color: rgb(94, 99, 136);
+}
+.rollover2:active{
+    background-color: rgb(14, 14, 20);
+    border: 3px solid rgb(55, 57, 73);
+    box-shadow: 3px 3px 5px rgb(55, 57, 73);
+    letter-spacing: 1px;
+    color: rgb(208, 204, 204);
+}

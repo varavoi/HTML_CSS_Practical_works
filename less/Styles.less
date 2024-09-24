@@ -1,0 +1,75 @@
+@text-color:red;
+@text-size:4em;
+@otstyp:50px;
+@fon:#1aa71a;
+
+.corners{
+    border-radius: 20px;
+    border: 3px dashed @text-color;
+    padding: 50px;
+}
+.colors{
+    background:spin(@fon, 30%);
+    color: darken(@text-color, 20%);
+    box-shadow: 2px 2px 5px @fon - #888888;
+}
+.otstyp(@razmer){
+    padding: @razmer;
+}
+.vnotstyp(@razmer2:50px){
+    margin:@razmer2;
+}
+.vnvid(@cvet: blue, @ten: 2px 2px 4px #000, @ramka: 3px dotted orange){
+    background: @cvet;
+    box-shadow: @ten;
+    border: @ramka;
+}
+.box{
+    color:@text-color;
+    font-size: @text-size;
+   /* padding: @otstyp;*/
+   padding-top: @otstyp;
+   padding-bottom: @otstyp;
+   padding-left:@otstyp * 4;
+   padding-right: @otstyp * 4;
+    background: @fon;
+}
+
+.box2{ 
+    font-size: @text-size - 2;
+    background: @fon - #333333;
+   // .otstyp(50px);
+   .vnotstyp;
+}
+.box3{
+    background: @text-color + #333333;
+    border: solid 2px @text-color - #333333;
+    color: @text-color - #444444;
+    font-size: @text-color - 1;
+   // .otstyp(50px);
+   .otstyp(10px);
+   .vnotstyp(100px);
+}
+
+.box4{
+    //lighten(@fon,20%) - фоновый цвет:дейтвие с цветом(lighten, darken, saturate, desaturate)(переменная, значение в процентах)
+    //spin - вращение по цветовому кругу
+    //background: lighten(@fon,35%);
+    //background: darken(@fon,20%);
+    //background: saturate(@fon,80%);
+    //background: desaturate(@fon,20%);
+    //background: spin(@fon,30%);
+    background: desaturate(spin(@fon, 30%),20%);
+    font-size: @text-size;
+    .otstyp(50px);
+}
+
+.box5{
+    font-size: @text-size + 1;
+    .colors;
+    .corners;
+}
+.box6{
+    .vnvid;
+    font-size: @text-size+1;
+}

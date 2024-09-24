@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Лендинг тренировочная страница</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" type="text/css" href="CSS/styles.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="CSS/demo.css" media="all" />
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <!-- FlexSlider -->
+    <script type="text/javascript" src="JS/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+    var $ = jQuery.noConflict();
+    $(window).load(function() {
+    $('.flexslider').flexslider({
+          animation: "fade"
+    });
+	
+	$(function() {
+		$('.show_menu').click(function(){
+				$('.menu').fadeIn();
+				$('.show_menu').fadeOut();
+				$('.hide_menu').fadeIn();
+		});
+		$('.hide_menu').click(function(){
+				$('.menu').fadeOut();
+				$('.show_menu').fadeIn();
+				$('.hide_menu').fadeOut();
+		});
+	});
+  });
+</script>
+    </head>
+    <body>
+        <header> <!--Для поисковых систем, для цвета-->
+            <div class="wrapper"> <!--Для общих отступов-->
+                <div class="stroka"> <!--Для группировки дочерних элементов-->
+                        <img src="IMG/logo.jpg" alt="" class="logo">
+                        <h1 class="zag1">Все будет хорошо!</h1>
+                        <nav class="menu1">
+                            <ul>
+                                <li class="knopka"><a href="#slider" class="button">Главная</a></li>
+                                <li class="knopka"><a href="#uslugi" class="button">Услуги</a></li>
+                                <li class="knopka"><a href="#price" class="button">Стоимость</a></li>
+                                <li class="knopka"><a href="#contacts" class="button">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="menu2">
+                            <ul>
+                                <li class="knopka_ico"><a href="#"><img src="IMG/phone_ico.png" class = "picto"></a></li>
+                                <li class="knopka_ico"><a href="#"><img src="IMG/email_ico.png" class = "picto"></a></li>
+                                <li class="knopka_ico"><a href="#"><img src="IMG/account_ico.png" class = "picto"></a></li>
+                            </ul>
+                        </nav>
+                </div>
+            </div>
+            <h1 class="zag3">Но это не точно!!!</h1>
+        </header>
+        <main>
+          <div class="wrapper">
+            <section class="kontent1" id = "slider">
+                <div class="container">
+                    <div class="slider_container">
+                       <div class="flexslider">
+                            <ul class="slides">
+                              <li>
+                                  <a href="#"><img src="IMG/slider/slide1.jpg"  alt="" title="" width="100%"/></a>
+                                  <div class="flex-caption">
+                                       <div class="caption_title_line"><h2>Party Hairstyles</h2><p>Find the perfect hairstyle a la Lauren Conrad for every type of festive fête.</p></div>
+                                  </div>
+                              </li>
+                              <li>
+                                  <a href="#"><img src="IMG/slider/slide2.jpg" alt="" title="" width="100%"/></a>
+                                  <div class="flex-caption">
+                                       <div class="caption_title_line"><h2>Beautiful Hairstyle</h2><p>The latest hairstyles and instructions on how to create them here. Total Beauty has your complete hairstyles guide</p></div>
+                                  </div>
+                              </li>
+                              <li>
+                                  <a href="#"><img src="IMG/slider/slide3.jpg" alt="" title="" width="100%"/></a>
+                                  <div class="flex-caption">
+                                       <div class="caption_title_line"><h2>Party Dresses</h2><p>If you are looking for something a little special for your big night out, check out Rare London's collection of stunning party dresses</p></div>
+                                  </div>
+                              </li>
+                              <li>
+                                  <a href="#"><img src="IMG/slider/slide4.jpg" alt="" title="" width="100%"/></a>
+                                  <div class="flex-caption">
+                                       <div class="caption_title_line"><h2>Bodycon Dresses</h2><p>The bodycon dress is a key silhouette for this season's party girl; from sleek colour-block panelling to geometric prints the bodycon.</p></div>
+                                  </div>
+                              </li>
+                          </ul>
+                        </div>
+                     </div>
+                      </div>  
+            </section> <!-- слайдер-->
+            
+            <section class="kontent2" id = "uslugi">
+                <div class="uslugi__zag__frame">
+                    <h1 class="uslugi__zag">Услуги</h1>
+                </div>
+                <div class="uslugi__kol__kart2">
+                    <div class="uslugi__str__kart2">
+                        <div class="uslugi__kart2">
+                            <img src="IMG/ToothRec.png" alt="" class="uslugi__img">
+                            <p class="nazv__uslug">Лечение зубов</p>
+                        </div>
+                        <div class="tekst__kart">
+                            <h2 class="zag_tip_uslug">Лечение зубов</h2>
+                            <p class="opis_uslug">Наиболее распространенные заболевания зубов, с которыми пациенты обращаются к стоматологам, — это кариес и пульпит. Предупреждён — значит вооружён. Рассмотрим основные причины появления кариеса и пульпита.
+                                Основные причины появления кариеса:
+                                Недостаточная гигиена полости рта.
+                                Чрезмерное употребление сладкой пищи и/или сахаросодержащих напитков.
+                                Ослабленный иммунитет и недостаток витаминов в организме.</p>
+                        </div> 
+                    </div> 
+                    <div class="uslugi__str__kart2">
+                        <div class="uslugi__kart2">
+                            <img src="IMG/tooth_baby1.png" alt="" class="uslugi__img">
+                            <p class="nazv__uslug">Детская стоматология</p>
+                        </div>
+                        <div class="tekst__kart">
+                            <h2 class="zag_tip_uslug">Детская стоматология</h2>
+                            <p class="opis_uslug">Наиболее распространенные заболевания зубов, с которыми пациенты обращаются к стоматологам, — это кариес и пульпит. Предупреждён — значит вооружён. Рассмотрим основные причины появления кариеса и пульпита.
+                                Основные причины появления кариеса:
+                                Недостаточная гигиена полости рта.
+                                Чрезмерное употребление сладкой пищи и/или сахаросодержащих напитков.
+                                Ослабленный иммунитет и недостаток витаминов в организме.</p>
+                        </div> 
+                    </div> 
+                    <div class="uslugi__str__kart2">
+                        <div class="uslugi__kart2">
+                            <img src="IMG/tooth_diagnostics.png" alt="" class="uslugi__img">
+                            <p class="nazv__uslug">Диагностика</p>
+                        </div>
+                        <div class="tekst__kart">
+                            <h2 class="zag_tip_uslug">Диагностика</h2>
+                            <p class="opis_uslug">Наиболее распространенные заболевания зубов, с которыми пациенты обращаются к стоматологам, — это кариес и пульпит. Предупреждён — значит вооружён. Рассмотрим основные причины появления кариеса и пульпита.
+                                Основные причины появления кариеса:
+                                Недостаточная гигиена полости рта.
+                                Чрезмерное употребление сладкой пищи и/или сахаросодержащих напитков.
+                                Ослабленный иммунитет и недостаток витаминов в организме.</p>
+                        </div> 
+                    </div> 
+                    <div class="uslugi__str__kart2">
+                        <div class="uslugi__kart2">
+                            <img src="IMG/tooth_implant.png" alt="" class="uslugi__img">
+                            <p class="nazv__uslug">Имплантация</p>
+                        </div>
+                        <div class="tekst__kart">
+                            <h2 class="zag_tip_uslug">Имплантация</h2>
+                            <p class="opis_uslug">Наиболее распространенные заболевания зубов, с которыми пациенты обращаются к стоматологам, — это кариес и пульпит. Предупреждён — значит вооружён. Рассмотрим основные причины появления кариеса и пульпита.
+                                Основные причины появления кариеса:
+                                Недостаточная гигиена полости рта.
+                                Чрезмерное употребление сладкой пищи и/или сахаросодержащих напитков.
+                                Ослабленный иммунитет и недостаток витаминов в организме.</p>
+                        </div> 
+                    </div> 
+                    
+            </div>
+                
+            </section>
+
+            <section class="kontent3" id = "price">
+                <img src="IMG/Picture_for_price.jpg" alt="" class="pic1">
+                <h2 class="zag2">Мы изучаем позиционирование в CSS</h2>
+            </section>
+          </div>
+        </main>
+        <footer id="contacts">
+            <div class="wrapper">
+                <a href="#image">
+                    <img src="IMG/slider/slide1.jpg" alt="" width="100">
+                </a>
+                <a href="#_" class="lightbox" id ="image" width="80%">
+                    <img src="IMG/slider/slide2.jpg" alt="">
+                </a>
+
+                
+                <img src="IMG/logo.jpg" alt="" class="logo_footer">
+                <div class="contcats_footer">
+                    <p class="zag_contacts_footer">Наши контакты</p>
+                    <p class="phone_number_footer">+7(999) 885-99-45</p>
+                    <p class="email_footer">archiveForMail@gmail.com</p>
+                </div>
+                <p class="copyright">@copyright by Avoian. All rights reserved.</p>
+                <img src="IMG/pic_for_footer.jpg" alt="" class="pic_footer">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6878620666432!2d30.32509097715251!3d59.93732147491445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f21f9ac87%3A0x5bfc7dfdda3b32b5!2z0JjRgtCw0LvRjNGP0L3RgdC60LDRjyDRg9C7LiwgMiwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjywgMTkxMTg2!5e0!3m2!1sru!2sus!4v1697740759379!5m2!1sru!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="karta"></iframe>
+            </div>
+        </footer>
+    </body>
+</html>
